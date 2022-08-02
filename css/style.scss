@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Main";
+  src: url('../fonts/main_font.woff') format("woff2");
+  url('../fonts/main_font.woff') format("woff");
+}
+img {
+  display: block;
+  width: 100px;
+}
+.logo:hover{
+  transform: scale(1.4);
+}
+
+.dropdown-menu{
+  border-radius: 10%;
+}
+.collapse{
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Main';
+
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Main';
+  font-size: 4em;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.chart{
+  opacity: 0;
+  animation: animate 1s linear forwards;
+}
+@keyframes animate {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
